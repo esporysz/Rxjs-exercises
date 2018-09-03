@@ -1,6 +1,8 @@
-import { Unsubscription } from './unsubsription/unsubscripton';
+import { MyObservable } from 'my-observable';
+
 export class App {
   run() {
-    const unsubscribe = new Unsubscription();
+    MyObservable.init();
+    MyObservable.subscribe();
   }
 }
