@@ -2,9 +2,15 @@ import { MyObservable } from 'my-observable';
 
 export class App {
   run() {
-    MyObservable.init1();
+    MyObservable.init();
+    MyObservable.map();
+    MyObservable.filter();
     MyObservable.subscribe();
-    MyObservable.init2();
+    MyObservable.init();
+    MyObservable.joinAllOperators();
+    MyObservable.subscribe();
+    MyObservable.init();
+    MyObservable.flatMapOperators();
     MyObservable.subscribe();
   }
 }
